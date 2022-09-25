@@ -3,13 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+.main {
     background-color: #222;
     color: #EEE;
     width: 100vw;
     height: 100vh;
-    
-
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
     grid-template-rows: auto auto auto auto;
@@ -17,8 +15,10 @@ body {
 .container {
     margin: 0.5rem;
     padding: 0.25rem;
-    box-shadow: 0 0 6px white;
+    box-shadow: 0 0 6px gray;
     background-color: #289;
+    
+    border-radius: 4px;
 
     grid-column-start: auto;
     grid-column-end: auto;
@@ -70,4 +70,15 @@ body {
 .container:nth-child(9) {
     grid-row-start: 3;
     grid-row-end: 5;
+}
+@media screen and (max-width: 600px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 90%;
+        height: 30%;
+        margin-inline: auto;
+    }
 }
