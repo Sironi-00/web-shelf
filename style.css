@@ -16,7 +16,9 @@
     margin: 0.5rem;
     padding: 0.25rem;
     box-shadow: 0 0 6px gray;
-    background-color: #289;
+    /* background-color: #289; */
+    background-color: rgb(25,25,112);
+
     
     border-radius: 4px;
 
